@@ -1,8 +1,8 @@
-@media(min-width: 1024px){
+@media(min-width:1024px) { 
 body{
-  margin: 0; /* Aplica un margen a todo el contenido */
-  padding: 0; /* Asegúrate de reiniciar el padding */
-  box-sizing: border-box; /* Incluye bordes y relleno en los tamaños definidos */
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
   background-color:#8EADD5;
   color: #1F242D;
   width: 1440;
@@ -20,7 +20,7 @@ header {
   gap: 30%;
 }
 
-menu-logo {
+.menu-logo{
   display: none;
 }
 
@@ -164,7 +164,7 @@ border: 0px;
 font-weight: bold;
 cursor: pointer;
 font-size: 16px;
-transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .text-content button:hover {
@@ -278,7 +278,7 @@ margin-bottom: 20%;
 
 .service {
   flex: 1; /* Todos los servicios ocupan el mismo espacio */
-  background-color: #fff; /* Fondo blanco */
+  background-color: #fff;
   padding: 20px; 
   width: 308;
   height: 191.10488891601562;
@@ -292,17 +292,17 @@ margin-bottom: 20%;
   background: #FFDED4;
 }
 .logo1, .logo2, .logo3 {
-  width: 60px; /* Dimensiones ajustadas, puedes cambiar esto según sea necesario */
+  width: 60px; 
   height: 60px;
   border-radius: 10px;
-  display: flex; /* Activa flexbox en cada contenedor individual */
-  justify-content: center; /* Centra la imagen horizontalmente */
-  align-items: center; /* Centra la imagen verticalmente */
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
 }
 
 .logo1 img, .logo2 img, .logo3 img {
   width: 60%;
-  height: auto; /* Mantiene la proporción de la imagen */
+  height: auto; 
 }
 
 .service .logo1 + h3{
@@ -518,7 +518,7 @@ max-width: 60%;
   font-weight: bold;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+  transition: background-color 0.3s ease, color 0.3s ease; 
   }  
 
   .contact-text button:hover {
@@ -526,8 +526,6 @@ max-width: 60%;
     border-color: #5A87C2; 
     color: #333;
   }
-
-
 
 /* Estilos para el footer */
 .footer {
@@ -589,7 +587,9 @@ max-width: 60%;
 }
 }
 
+/* Footer Responsive (Móvil) */
 @media (max-width: 1024px) {
+
   body{
     display: grid;
     justify-content: center;
