@@ -20,6 +20,10 @@ header {
   gap: 30%;
 }
 
+menu-logo {
+  display: none;
+}
+
 header .DA{
 width: 170px;
 height: 24px;
@@ -584,18 +588,14 @@ max-width: 60%;
   color: #5A87C2;
 }
 
-@media (min-width:480px){
-  body{
-    background-color: #8EADD5;
-  }
-}
 
-/* @media (max-width: 480px) {
+@media (max-width: 1024px) {
   body {
       width: 100%;
       height: auto;
       padding: 10px;
       font-size: 14px;
+      background-color: #8EADD5;
   }
 
   header {
@@ -607,10 +607,14 @@ max-width: 60%;
   header .DA {
       font-size: 16px;
   }
-
-  header nav ul {
-      flex-direction: column;
-      gap: 15px;
+  
+  .menu-logo {
+    display: block; 
+    cursor: pointer; 
+    width: 40px; 
+  }
+  nav ul {
+    display: none;
   }
 
   .contenedor-hero {
@@ -690,4 +694,57 @@ max-width: 60%;
       flex-direction: column;
       text-align: center;
   }
-} */
+    
+    .footer {
+    margin-top: 100px;
+    background-color: #284974;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-section {
+    margin-bottom: 40px; /* Espacio adicional entre las secciones */
+  }
+
+  .footer-section p {
+    color: white;
+    margin-bottom: 20px; /* Añade espacio debajo del texto del párrafo */
+  }
+
+  .footer-section h3, h4 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 25px; /* Espacio entre el encabezado y el contenido */
+  }
+
+  .contact-text button, .hero button {
+    width: 167px;
+    height: 48px;
+    border-radius: 8px;
+    padding: 15px 25px; /* Más espacio interno del botón */
+    margin-top: 15px; /* Más espacio superior del botón */
+    background-color: #272D38; 
+    color: white;
+    border: 0px; 
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+  }  
+
+  .footer-section ul li {
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 25px; /* Más espacio entre los elementos de la lista */
+  }
+
+  .footer-section ul li a {
+    color: white;
+    font-size: 18px;
+    margin-right: 10%; 
+    text-decoration: none;
+  }
+}
