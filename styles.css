@@ -1,4 +1,4 @@
-
+@media(min-width: 1024px){
 body{
   margin: 0; /* Aplica un margen a todo el contenido */
   padding: 0; /* Asegúrate de reiniciar el padding */
@@ -587,115 +587,57 @@ max-width: 60%;
 .footer-section ul li a:hover {
   color: #5A87C2;
 }
-
+}
 
 @media (max-width: 1024px) {
-  body {
-      width: 100%;
-      height: auto;
-      padding: 10px;
-      font-size: 14px;
-      background-color: #8EADD5;
+  body{
+    display: grid;
+    justify-content: center;
+    background-color: #8EADD5;
   }
-
-  header {
-      flex-direction: column;
-      gap: 10px;
-      padding: 20px;
-  }
-
-  header .DA {
-      font-size: 16px;
+  nav ul li{
+    display: none;
   }
   
+  .DA {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+  }
   .menu-logo {
     display: block; 
     cursor: pointer; 
     width: 40px; 
   }
-  nav ul {
-    display: none;
+
+  .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 30%;
   }
 
-  .contenedor-hero {
-      height: auto;
-      padding: 20px;
+  .hero{
+    place-content: center;
   }
 
-  .hero {
-      flex-direction: column;
-      gap: 15px;
-      width: 100%;
+  .service{
+    background-color: #ffff;
+    display: grid;
   }
+  .logo1 {
+    background: #FFDED4;
+  }
+  .logo2 {
+    background: #FFEED4;
+    }
+  .logo3{
+    background: #D4F0FF;
+      }
 
-  .hero h1 {
-      font-size: 36px;
-      text-align: center;
-      width: 100%;
-  }
 
-  .hero p {
-      font-size: 14px;
-      text-align: center;
-  }
-
-  .image-content {
-      width: 100%;
-      height: auto;
-  }
-
-  .hero button {
-      width: 100%;
-      height: auto;
-      font-size: 14px;
-      padding: 10px;
-  }
-
-  .companies {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .branding-section {
-      width: 100%;
-      margin: 20px 0;
-  }
-
-  .services {
-      flex-direction: column;
-      gap: 20px;
-  }
-
-  .service {
-      max-width: 100%;
-      padding: 10px;
-  }
-
-  .customer-section {
-      flex-direction: column;
-      gap: 20px;
-  }
-
-  .customer-content {
-      flex-direction: column;
-  }
-
-  .contact-section {
-      flex-direction: column;
-      padding: 20px;
-  }
-
-  .contact-content {
-      flex-direction: column;
-      gap: 20px;
-  }
-
-  .footer-content {
-      flex-direction: column;
-      text-align: center;
-  }
-    
-    .footer {
+  .footer {
     margin-top: 100px;
     background-color: #284974;
     flex-direction: column;
